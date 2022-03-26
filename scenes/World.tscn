@@ -1,0 +1,82 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://enviornment/raw_assets/grass_lowres.png" type="Texture" id=1]
+[ext_resource path="res://assets/shed.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/brickwall.tscn" type="PackedScene" id=3]
+[ext_resource path="res://player/Player.tscn" type="PackedScene" id=4]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_texture = ExtResource( 1 )
+uv1_scale = Vector3( 50, 50, 50 )
+
+[sub_resource type="CubeMesh" id=2]
+material = SubResource( 1 )
+size = Vector3( 100, 2, 100 )
+
+[sub_resource type="ConcavePolygonShape" id=3]
+data = PoolVector3Array( -50, 1, 50, 50, 1, 50, -50, -1, 50, 50, 1, 50, 50, -1, 50, -50, -1, 50, 50, 1, -50, -50, 1, -50, 50, -1, -50, -50, 1, -50, -50, -1, -50, 50, -1, -50, 50, 1, 50, 50, 1, -50, 50, -1, 50, 50, 1, -50, 50, -1, -50, 50, -1, 50, -50, 1, -50, -50, 1, 50, -50, -1, -50, -50, 1, 50, -50, -1, 50, -50, -1, -50, 50, 1, 50, -50, 1, 50, 50, 1, -50, -50, 1, 50, -50, 1, -50, 50, 1, -50, -50, -1, 50, 50, -1, 50, -50, -1, -50, 50, -1, 50, 50, -1, -50, -50, -1, -50 )
+
+[sub_resource type="NavigationMesh" id=4]
+vertices = PoolVector3Array( -48.6297, 3.67599, -33.2766, -55.2297, 3.67599, -33.2766, -55.2297, 3.67599, -22.1765, -42.0297, 3.67599, -33.2766, -48.6297, 3.67599, -33.2766, -55.2297, 3.67599, -22.1765, -35.4297, 3.67599, -33.2766, -42.0297, 3.67599, -33.2766, -55.2297, 3.67599, -22.1765, -55.2297, 3.67599, 11.4235, -30.3297, 3.67599, 11.4235, -30.0297, 3.67599, 9.62345, -55.2297, 3.67599, 0.0234528, -28.5297, 3.67599, -33.2766, -35.4297, 3.67599, -33.2766, -55.2297, 3.67599, -22.1765, -55.2297, 3.67599, -11.0765, -28.2297, 3.67599, 9.62345, -55.2297, 3.67599, 0.0234528, -30.0297, 3.67599, 9.62345, -28.2297, 3.67599, 9.62345, -55.2297, 3.67599, -11.0765, -25.5297, 3.67599, 9.62345, -18.6297, 3.67599, 9.32345, -18.6297, 3.67599, 6.92345, -28.2297, 3.67599, 9.62345, -25.5297, 3.67599, 9.62345, -18.6297, 3.67599, 6.92345, -17.4297, 3.67599, -33.2766, -28.5297, 3.67599, -33.2766, -18.6297, 3.67599, 6.92345, -17.4297, 3.67599, 6.62345, -17.4297, 3.67599, -33.2766, 43.4703, 3.67599, -22.7765, 43.4703, 3.67599, -33.2766, 35.6703, 3.67599, -33.2766, 43.4703, 3.67599, -22.7765, 35.6703, 3.67599, -33.2766, 28.1703, 3.67599, -33.2766, 43.4703, 3.67599, -22.7765, 28.1703, 3.67599, -33.2766, 20.3703, 3.67599, -33.2766, 43.4703, 3.67599, -11.9765, 43.4703, 3.67599, -22.7765, 20.3703, 3.67599, -33.2766, 12.8703, 3.67599, -33.2766, 43.4703, 3.67599, -11.9765, 12.8703, 3.67599, -33.2766, 5.07026, 3.67599, -33.2766, 43.4703, 3.67599, -1.47655, -17.4297, 3.67599, -33.2766, -17.4297, 3.67599, 6.62345, -16.5297, 3.67599, 6.92345, -9.92974, 3.67599, -33.2766, -2.42974, 3.67599, -33.2766, -16.5297, 3.67599, 6.92345, -16.5297, 3.67599, 9.32345, 43.4703, 3.67599, 9.32345, 43.4703, 3.67599, -1.47655, 5.07026, 3.67599, -33.2766, -2.42974, 3.67599, -33.2766, -9.92974, 3.67599, -33.2766, -16.5297, 3.67599, 6.92345, -24.9297, 3.67599, 13.2235, -27.6297, 3.67599, 13.5235, -27.6297, 3.67599, 18.3235, -18.6297, 3.67599, 9.32345, -25.5297, 3.67599, 9.62345, -24.9297, 3.67599, 9.92345, -18.6297, 3.67599, 9.32345, -24.9297, 3.67599, 9.92345, -24.9297, 3.67599, 13.2235, -24.9297, 3.67599, 13.2235, -27.6297, 3.67599, 18.3235, -18.6297, 3.67599, 18.3235, -18.6297, 3.67599, 9.32345, -16.5297, 3.67599, 17.4235, 43.4703, 3.67599, 17.4235, 43.4703, 3.67599, 9.32345, -16.5297, 3.67599, 9.32345, -30.0297, 3.67599, 18.3235, -27.6297, 3.67599, 18.3235, -27.6297, 3.67599, 13.5235, -30.0297, 3.67599, 13.5235, -30.3297, 3.67599, 19.5235, -30.0297, 3.67599, 18.3235, -30.0297, 3.67599, 13.5235, -30.3297, 3.67599, 11.4235, -55.2297, 3.67599, 11.4235, -55.2297, 3.67599, 19.5235, 35.3703, 3.67599, 65.4235, 43.4703, 3.67599, 65.4235, 43.4703, 3.67599, 53.4235, 27.5703, 3.67599, 65.4235, 35.3703, 3.67599, 65.4235, 43.4703, 3.67599, 53.4235, 19.7703, 3.67599, 65.4235, 27.5703, 3.67599, 65.4235, 43.4703, 3.67599, 53.4235, 11.9703, 3.67599, 65.4235, 19.7703, 3.67599, 65.4235, 43.4703, 3.67599, 53.4235, 43.4703, 3.67599, 41.4235, 3.87025, 3.67599, 65.4235, 11.9703, 3.67599, 65.4235, 43.4703, 3.67599, 41.4235, 43.4703, 3.67599, 29.4235, -17.1297, 3.67599, 20.4235, -19.5297, 3.67599, 20.4235, -19.5297, 3.67599, 65.4235, -11.7297, 3.67599, 65.4235, -16.5297, 3.67599, 17.4235, -16.5297, 3.67599, 19.8235, -3.92974, 3.67599, 65.4235, 3.87025, 3.67599, 65.4235, 43.4703, 3.67599, 29.4235, 43.4703, 3.67599, 17.4235, -16.5297, 3.67599, 19.8235, -17.1297, 3.67599, 20.4235, -11.7297, 3.67599, 65.4235, -3.92974, 3.67599, 65.4235, -55.2297, 3.67599, 53.7235, -55.2297, 3.67599, 65.4235, -48.3297, 3.67599, 65.4235, -55.2297, 3.67599, 53.7235, -48.3297, 3.67599, 65.4235, -41.4297, 3.67599, 65.4235, -55.2297, 3.67599, 53.7235, -41.4297, 3.67599, 65.4235, -34.5297, 3.67599, 65.4235, -30.0297, 3.67599, 20.4235, -30.3297, 3.67599, 19.5235, -55.2297, 3.67599, 19.5235, -55.2297, 3.67599, 30.9235, -55.2297, 3.67599, 53.7235, -34.5297, 3.67599, 65.4235, -27.6297, 3.67599, 65.4235, -27.6297, 3.67599, 20.4235, -55.2297, 3.67599, 42.3235, -27.6297, 3.67599, 20.4235, -30.0297, 3.67599, 20.4235, -55.2297, 3.67599, 30.9235, -55.2297, 3.67599, 42.3235, -27.6297, 3.67599, 65.4235, -19.5297, 3.67599, 65.4235, -19.5297, 3.67599, 20.4235, -27.6297, 3.67599, 20.4235 )
+polygons = [ PoolIntArray( 2, 1, 0 ), PoolIntArray( 5, 4, 3 ), PoolIntArray( 8, 7, 6 ), PoolIntArray( 10, 9, 11 ), PoolIntArray( 11, 9, 12 ), PoolIntArray( 14, 13, 15 ), PoolIntArray( 15, 13, 16 ), PoolIntArray( 16, 13, 17 ), PoolIntArray( 19, 18, 20 ), PoolIntArray( 20, 18, 21 ), PoolIntArray( 22, 24, 23 ), PoolIntArray( 26, 25, 27 ), PoolIntArray( 27, 25, 29 ), PoolIntArray( 27, 29, 28 ), PoolIntArray( 32, 31, 30 ), PoolIntArray( 35, 34, 33 ), PoolIntArray( 38, 37, 36 ), PoolIntArray( 39, 41, 40 ), PoolIntArray( 44, 43, 45 ), PoolIntArray( 45, 43, 42 ), PoolIntArray( 47, 46, 48 ), PoolIntArray( 48, 46, 49 ), PoolIntArray( 51, 50, 52 ), PoolIntArray( 52, 50, 53 ), PoolIntArray( 55, 54, 56 ), PoolIntArray( 56, 54, 59 ), PoolIntArray( 56, 59, 58 ), PoolIntArray( 56, 58, 57 ), PoolIntArray( 62, 61, 60 ), PoolIntArray( 65, 64, 63 ), PoolIntArray( 68, 67, 66 ), PoolIntArray( 71, 70, 69 ), PoolIntArray( 73, 72, 74 ), PoolIntArray( 74, 72, 75 ), PoolIntArray( 79, 78, 76 ), PoolIntArray( 76, 78, 77 ), PoolIntArray( 83, 82, 80 ), PoolIntArray( 80, 82, 81 ), PoolIntArray( 85, 84, 86 ), PoolIntArray( 86, 84, 87 ), PoolIntArray( 87, 84, 89 ), PoolIntArray( 87, 89, 88 ), PoolIntArray( 92, 91, 90 ), PoolIntArray( 94, 93, 95 ), PoolIntArray( 98, 97, 96 ), PoolIntArray( 100, 99, 101 ), PoolIntArray( 101, 99, 102 ), PoolIntArray( 104, 103, 105 ), PoolIntArray( 105, 103, 106 ), PoolIntArray( 108, 107, 109 ), PoolIntArray( 109, 107, 110 ), PoolIntArray( 112, 111, 113 ), PoolIntArray( 113, 111, 114 ), PoolIntArray( 114, 111, 115 ), PoolIntArray( 115, 111, 116 ), PoolIntArray( 118, 117, 119 ), PoolIntArray( 119, 117, 120 ), PoolIntArray( 123, 122, 121 ), PoolIntArray( 126, 125, 124 ), PoolIntArray( 129, 128, 127 ), PoolIntArray( 131, 130, 132 ), PoolIntArray( 132, 130, 133 ), PoolIntArray( 135, 134, 136 ), PoolIntArray( 136, 134, 138 ), PoolIntArray( 136, 138, 137 ), PoolIntArray( 140, 139, 141 ), PoolIntArray( 141, 139, 142 ), PoolIntArray( 146, 145, 143 ), PoolIntArray( 143, 145, 144 ) ]
+
+[sub_resource type="ProceduralSky" id=5]
+sky_top_color = Color( 0.156863, 0.184314, 0.211765, 1 )
+sky_horizon_color = Color( 0.423529, 0.396078, 0.372549, 1 )
+sun_color = Color( 0.854902, 0.607843, 0.407843, 1 )
+
+[sub_resource type="Environment" id=6]
+background_mode = 2
+background_sky = SubResource( 5 )
+
+[node name="World" type="Spatial"]
+
+[node name="Enviornment" type="Spatial" parent="."]
+
+[node name="Ground" type="MeshInstance" parent="Enviornment"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.82975, 2.27599, 16.1235 )
+mesh = SubResource( 2 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Enviornment/Ground"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Enviornment/Ground/StaticBody"]
+shape = SubResource( 3 )
+
+[node name="shed" parent="Enviornment" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -27.6759, 3.37363, 11.7584 )
+
+[node name="brickwall" parent="Enviornment" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -27.4887, 3.2593, 19.3029 )
+
+[node name="brickwall2" parent="Enviornment" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -23.4887, 3.2593, 19.3029 )
+
+[node name="brickwall3" parent="Enviornment" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19.4887, 3.2593, 19.3029 )
+
+[node name="brickwall4" parent="Enviornment" instance=ExtResource( 3 )]
+transform = Transform( 0, 0, 1, 0, 1, 0, -1, 0, 0, -17.4887, 3.2593, 17.3029 )
+
+[node name="brickwall5" parent="Enviornment" instance=ExtResource( 3 )]
+transform = Transform( 0, 0, 1, 0, 1, 0, -1, 0, 0, -17.4887, 3.2593, 13.3029 )
+
+[node name="brickwall6" parent="Enviornment" instance=ExtResource( 3 )]
+transform = Transform( 0, 0, 1, 0, 1, 0, -1, 0, 0, -17.4887, 3.2593, 9.30294 )
+
+[node name="Navigation" type="Navigation" parent="."]
+visible = false
+
+[node name="NavigationMeshInstance" type="NavigationMeshInstance" parent="Navigation"]
+navmesh = SubResource( 4 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 6 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="WorldEnvironment"]
+transform = Transform( 1, 0, 0, 0, -0.5, 0.866025, 0, -0.866025, -0.5, -23, 27, 0 )
+light_color = Color( 0.854902, 0.607843, 0.407843, 1 )
+
+[node name="Player" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -28, 4, 16 )
