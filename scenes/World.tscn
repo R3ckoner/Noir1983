@@ -3,7 +3,7 @@
 [ext_resource path="res://enviornment/raw_assets/grass_lowres.png" type="Texture" id=1]
 [ext_resource path="res://assets/shed.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/brickwall.tscn" type="PackedScene" id=3]
-[ext_resource path="res://player/Player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://characters/player/Player.tscn" type="PackedScene" id=4]
 
 [sub_resource type="SpatialMaterial" id=1]
 albedo_texture = ExtResource( 1 )
@@ -34,7 +34,7 @@ background_sky = SubResource( 5 )
 [node name="Enviornment" type="Spatial" parent="."]
 
 [node name="Ground" type="MeshInstance" parent="Enviornment"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.82975, 2.27599, 16.1235 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -20.9114, 2.5032, 10.8189 )
 mesh = SubResource( 2 )
 skeleton = NodePath("../..")
 material/0 = null
@@ -54,7 +54,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -27.4887, 3.2593, 19.3029 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -23.4887, 3.2593, 19.3029 )
 
 [node name="brickwall3" parent="Enviornment" instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19.4887, 3.2593, 19.3029 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19.4767, 3.29323, 19.3048 )
 
 [node name="brickwall4" parent="Enviornment" instance=ExtResource( 3 )]
 transform = Transform( 0, 0, 1, 0, 1, 0, -1, 0, 0, -17.4887, 3.2593, 17.3029 )
