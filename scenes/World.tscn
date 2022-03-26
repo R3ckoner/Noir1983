@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=2]
 
-[ext_resource path="res://enviornment/raw_assets/grass_lowres.png" type="Texture" id=1]
+[ext_resource path="res://textures/grass/grass_lowres.png" type="Texture" id=1]
 [ext_resource path="res://assets/shed.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/brickwall.tscn" type="PackedScene" id=3]
 [ext_resource path="res://characters/player/Player.tscn" type="PackedScene" id=4]

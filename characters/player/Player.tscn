@@ -22,4 +22,7 @@ current = true
 
 [node name="CharacterMover" type="Spatial" parent="."]
 script = ExtResource( 1 )
-jump_force = 20
+move_accel = 3
+max_speed = 20
+jump_force = 10
+gravity = 40
