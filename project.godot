@@ -218,6 +218,11 @@ gdscript/warnings/unused_variable=false
 
 enabled=PoolStringArray( "res://addons/qodot/plugin.cfg" )
 
+[global]
+
+text=false
+texteditor=false
+
 [importer_defaults]
 
 texture={
@@ -279,6 +284,7 @@ exit={
 
 3d_physics/layer_1="enviornment"
 3d_physics/layer_2="characters"
+3d_physics/layer_3="hitboxes"
 
 [physics]
 
