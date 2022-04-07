@@ -8,7 +8,7 @@
             "name": "GDScript Godot",
             "type": "godot",
             "request": "launch",
-            "project": "${/Users/ruairi/Desktop/Dev/GameDev/Godot_Projects/Noir1983}",
+            "project": "${/Users/ruairi/Desktop/Dev/GameDev/Godot_Projects/Noir1983/project.godot}",
             "port": 6007,
             "address": "127.0.0.1",
             "launch_game_instance": true,
